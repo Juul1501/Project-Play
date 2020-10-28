@@ -18,7 +18,7 @@ public class AnimalSpawner : MonoBehaviour
                     if (amount > 0)
                     {
                         Debug.Log("Hit " + hit.transform.gameObject.name);
-                        Instantiate(chicken, hit.point, Quaternion.identity, hit.transform);
+                        Instantiate(chicken, hit.point, Quaternion.identity);
                         amount -= 1;
                     }
                 }
