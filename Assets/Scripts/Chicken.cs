@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using TreeEditor;
 using UnityEditorInternal;
 using UnityEngine;
@@ -21,10 +22,12 @@ public class Chicken : MonoBehaviour
     Vector3 destination;
     public GameObject explosionParticle;
 
+    Transform curTarget;
+
     void Start()
     {
-        Transform t = GetClosestBuilding(transform.position, 100);
-        destination = t.position;
+        curTarget = GetClosestBuilding(transform.position, 100);
+        destination = curTarget.position;
         agent.SetDestination(destination);
         state = State.Walking;
     }
@@ -41,14 +44,18 @@ public class Chicken : MonoBehaviour
                     agent.destination = transform.position;
                     state = State.Exploding;
                 }
+                if(curTarget == null)
+                {
+                    curTarget = GetClosestBuilding(transform.position, 100);
+                    destination = curTarget.position;
+                    agent.SetDestination(destination);
+                }
             break;
             case State.Exploding:
                 if (!exploded)
                 {
-                    Explode(transform.position, explosionRadius, explosionDamage);
-                    Instantiate(explosionParticle,transform.position,Quaternion.identity);
-                    exploded = true;
-                    Destroy(this.gameObject);
+                    transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(2, 2, 2), 0.01f);
+                    StartCoroutine(ExplodeChicken());
                 }
                 if (exploded)
                 {
@@ -83,5 +90,14 @@ public class Chicken : MonoBehaviour
             }
         }
         return tMin;
+    }
+
+    IEnumerator ExplodeChicken()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Explode(transform.position, explosionRadius, explosionDamage);
+        Instantiate(explosionParticle, transform.position, Quaternion.identity);
+        exploded = true;
+        Destroy(this.gameObject);
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Farm : MonoBehaviour
 {
-    public int health = 500;
+    public int health = 1000;
     public GameObject smokeParticle;
     public GameObject destroyParticle;
 
@@ -17,7 +17,7 @@ public class Farm : MonoBehaviour
     public void AddDamage(int amount)
     {
         health = health - amount;
-        if (health <= starthealth / 2)
+        if (health <= starthealth / 2 && smokeParticle != null)
         {
             smokeParticle.SetActive(true);
         }
@@ -25,6 +25,7 @@ public class Farm : MonoBehaviour
         {
             Debug.Log("Destroyed");
             Destroy(this.gameObject);
+            if(destroyParticle != null)
             Instantiate(destroyParticle,transform.position,Quaternion.identity);
         }
     }
