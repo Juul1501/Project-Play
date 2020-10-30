@@ -6,10 +6,13 @@ public class AnimalSpawner : MonoBehaviour
 {
     public int amount = 20;
     public GameObject chicken;
+
+    public GameObject arrow;
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
+
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
@@ -20,6 +23,8 @@ public class AnimalSpawner : MonoBehaviour
                         Debug.Log("Hit " + hit.transform.gameObject.name);
                         Instantiate(chicken, hit.point, Quaternion.identity);
                         amount -= 1;
+                        if(arrow != null)
+                        arrow.SetActive(false);
                     }
                 }
         }

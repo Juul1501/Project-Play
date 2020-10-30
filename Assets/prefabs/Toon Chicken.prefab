@@ -776,7 +776,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 512
-  explosionRadius: 3.3
+  explosionRadius: 2
   explosionDamage: 500
   explosionParticle: {fileID: 469185268099506324, guid: ebf558bc749eb2b40b50eb10c70a31d1,
     type: 3}

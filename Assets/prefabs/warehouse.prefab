@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9095619264862424559}
   - component: {fileID: 9109044322592590906}
   - component: {fileID: 5173610824021402672}
+  - component: {fileID: 3778182232514193982}
   m_Layer: 9
   m_Name: warehouse
   m_TagString: Untagged
@@ -111,6 +112,22 @@ MonoBehaviour:
   smokeParticle: {fileID: 3693317604355392081}
   destroyParticle: {fileID: 469185268099506324, guid: ebf558bc749eb2b40b50eb10c70a31d1,
     type: 3}
+--- !u!208 &3778182232514193982
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9110432432218493399}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.376, y: 1.3540001, z: 1.248}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.16600001, y: 1.3570001, z: 0.021000002}
+  m_TimeToStationary: 0.5
 --- !u!1001 &5955738791816751384
 PrefabInstance:
   m_ObjectHideFlags: 0

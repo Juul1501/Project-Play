@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8787406852271784882}
   - component: {fileID: 8766082435053499842}
   - component: {fileID: 8764378530951965759}
+  - component: {fileID: 1028360913786887838}
   m_Layer: 9
   m_Name: garni
   m_TagString: Untagged
@@ -111,6 +112,22 @@ MonoBehaviour:
   smokeParticle: {fileID: 903863436230756342}
   destroyParticle: {fileID: 3261661701387060961, guid: 52065b6e647cf8a4d8785a00958f19cd,
     type: 3}
+--- !u!208 &1028360913786887838
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8764378530951965752}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.86, y: 1.046, z: 0.814}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.041, y: 1.029, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &7885080753052265663
 PrefabInstance:
   m_ObjectHideFlags: 0

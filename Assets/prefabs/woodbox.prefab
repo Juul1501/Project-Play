@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 203181152510858493}
   - component: {fileID: 191477905496390613}
   - component: {fileID: 183512354298233989}
-  - component: {fileID: 206934727140194361}
-  - component: {fileID: 7945909734382238136}
+  - component: {fileID: 5182627023139709959}
   m_Layer: 9
   m_Name: woodbox_A
   m_TagString: Untagged
@@ -82,34 +81,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &206934727140194361
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205310367723651401}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6863328, y: 0.50627106, z: 0.58552754}
-  m_Center: {x: 0.00000029802322, y: 0.25303409, z: 8.989577e-16}
---- !u!114 &7945909734382238136
-MonoBehaviour:
+--- !u!208 &5182627023139709959
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205310367723651401}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01e5d8d9344e80e47bf091f60751fec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  smokeParticle: {fileID: 0}
-  destroyParticle: {fileID: 0}
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.34300002, y: 0.25300002, z: 0.293}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.25300002, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &205336930733383205
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,8 +108,7 @@ GameObject:
   - component: {fileID: 202658158616939223}
   - component: {fileID: 191593078428060959}
   - component: {fileID: 183349534353060357}
-  - component: {fileID: 206934727140194360}
-  - component: {fileID: 5525358811504345266}
+  - component: {fileID: 6074360154868991289}
   m_Layer: 9
   m_Name: woodbox_A (1)
   m_TagString: Untagged
@@ -191,34 +177,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &206934727140194360
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205336930733383205}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6863328, y: 0.50627106, z: 0.58552754}
-  m_Center: {x: 0.00000023841858, y: 0.25303406, z: 8.989577e-16}
---- !u!114 &5525358811504345266
-MonoBehaviour:
+--- !u!208 &6074360154868991289
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205336930733383205}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01e5d8d9344e80e47bf091f60751fec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  smokeParticle: {fileID: 0}
-  destroyParticle: {fileID: 0}
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.34300002, y: 0.25300002, z: 0.293}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.25300002, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &205359408536484259
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,8 +204,7 @@ GameObject:
   - component: {fileID: 202591644261499499}
   - component: {fileID: 191950123589823725}
   - component: {fileID: 183663531719793993}
-  - component: {fileID: 206934727140194363}
-  - component: {fileID: 4799537119447856710}
+  - component: {fileID: 6413020562944386}
   m_Layer: 9
   m_Name: woodbox_A (2)
   m_TagString: Untagged
@@ -300,34 +273,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &206934727140194363
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 205359408536484259}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6863329, y: 0.50627106, z: 0.5855276}
-  m_Center: {x: 0.00000011920929, y: 0.25303403, z: -0.0000009536743}
---- !u!114 &4799537119447856710
-MonoBehaviour:
+--- !u!208 &6413020562944386
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205359408536484259}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01e5d8d9344e80e47bf091f60751fec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  smokeParticle: {fileID: 0}
-  destroyParticle: {fileID: 0}
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.34300002, y: 0.25300002, z: 0.293}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.25300002, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &205768375320241637
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +298,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 202835299180437245}
+  - component: {fileID: 2739438181003267871}
+  - component: {fileID: 8759284470772057099}
   m_Layer: 9
   m_Name: woodbox
   m_TagString: Untagged
@@ -361,3 +324,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -18.281, z: 0}
+--- !u!114 &2739438181003267871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205768375320241637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e5d8d9344e80e47bf091f60751fec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1000
+  smokeParticle: {fileID: 0}
+  destroyParticle: {fileID: 0}
+--- !u!65 &8759284470772057099
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205768375320241637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8816936, y: 0.95634365, z: 1}
+  m_Center: {x: -0.44084603, y: 0.45465264, z: -3.80043e-11}

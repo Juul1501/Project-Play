@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 3485642241450022954}
   - component: {fileID: 3491313708751778342}
   - component: {fileID: 3563600150146959956}
-  - component: {fileID: 3469758821356915657}
-  - component: {fileID: 2318277438680523210}
+  - component: {fileID: 5707655594288345877}
   m_Layer: 9
   m_Name: straw (1)
   m_TagString: Untagged
@@ -101,34 +100,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &3469758821356915657
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3468545951221594350}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6036228, y: 0.43527052, z: 0.72569466}
-  m_Center: {x: -6.4562424e-16, y: 0.20768812, z: 0.00000047683716}
---- !u!114 &2318277438680523210
-MonoBehaviour:
+--- !u!208 &5707655594288345877
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3468545951221594350}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01e5d8d9344e80e47bf091f60751fec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  smokeParticle: {fileID: 0}
-  destroyParticle: {fileID: 0}
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.30200002, y: 0.21800001, z: 0.363}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.208, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3468597223216375730
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,8 +128,7 @@ GameObject:
   - component: {fileID: 3482096486402993108}
   - component: {fileID: 3491959092890254278}
   - component: {fileID: 3564316187191366980}
-  - component: {fileID: 3469758821356915671}
-  - component: {fileID: 1341430241073643674}
+  - component: {fileID: 5907034900831869571}
   m_Layer: 9
   m_Name: straw (3)
   m_TagString: Untagged
@@ -230,34 +216,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &3469758821356915671
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3468597223216375730}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.603623, y: 0.43527052, z: 0.72569484}
-  m_Center: {x: 0.00000011920929, y: 0.20768811, z: 0.00000047683716}
---- !u!114 &1341430241073643674
-MonoBehaviour:
+--- !u!208 &5907034900831869571
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3468597223216375730}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01e5d8d9344e80e47bf091f60751fec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  smokeParticle: {fileID: 0}
-  destroyParticle: {fileID: 0}
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.30200002, y: 0.21800001, z: 0.363}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.208, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3468635137339488312
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,8 +244,7 @@ GameObject:
   - component: {fileID: 3481426379117674130}
   - component: {fileID: 3491404392094574326}
   - component: {fileID: 3564219707541653002}
-  - component: {fileID: 3469758821356915670}
-  - component: {fileID: 1920096168660477056}
+  - component: {fileID: 4582996838197097882}
   m_Layer: 9
   m_Name: straw (2)
   m_TagString: Untagged
@@ -359,34 +332,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &3469758821356915670
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3468635137339488312}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.60362285, y: 0.43527052, z: 0.7256947}
-  m_Center: {x: -2.2135688e-15, y: 0.20768802, z: -0.00000023841858}
---- !u!114 &1920096168660477056
-MonoBehaviour:
+--- !u!208 &4582996838197097882
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3468635137339488312}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01e5d8d9344e80e47bf091f60751fec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  smokeParticle: {fileID: 0}
-  destroyParticle: {fileID: 0}
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.30200002, y: 0.21800001, z: 0.363}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.208, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3468668134556446900
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +357,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3470191420052551082}
+  - component: {fileID: 5521242569224655657}
+  - component: {fileID: 4478352364048909991}
   m_Layer: 9
   m_Name: straw
   m_TagString: Untagged
@@ -421,6 +384,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5521242569224655657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3468668134556446900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e5d8d9344e80e47bf091f60751fec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  smokeParticle: {fileID: 0}
+  destroyParticle: {fileID: 0}
+--- !u!65 &4478352364048909991
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3468668134556446900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3469150976855006576
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,8 +424,7 @@ GameObject:
   - component: {fileID: 3481377973048439092}
   - component: {fileID: 3491227072197582732}
   - component: {fileID: 3563500446720659956}
-  - component: {fileID: 3469758821356915668}
-  - component: {fileID: 4958564655426063606}
+  - component: {fileID: 7243107623760645165}
   m_Layer: 9
   m_Name: straw
   m_TagString: Untagged
@@ -522,31 +512,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &3469758821356915668
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3469150976855006576}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6036228, y: 0.43527052, z: 0.72569466}
-  m_Center: {x: 0.00000008940697, y: 0.20768808, z: 0.00000047683716}
---- !u!114 &4958564655426063606
-MonoBehaviour:
+--- !u!208 &7243107623760645165
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3469150976855006576}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01e5d8d9344e80e47bf091f60751fec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  smokeParticle: {fileID: 0}
-  destroyParticle: {fileID: 0}
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.30200002, y: 0.21800001, z: 0.363}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.208, z: 0}
+  m_TimeToStationary: 0.5
