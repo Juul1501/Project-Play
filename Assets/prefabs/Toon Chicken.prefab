@@ -770,16 +770,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f92d6528686fad4ab7a03873500c87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationOffset: 3
+  destinationOffset: 0.5
   state: 0
   agent: {fileID: 1757517862236599276}
   targetLayer:
     serializedVersion: 2
     m_Bits: 512
-  explosionRadius: 2
+  explosionRadius: 3
   explosionDamage: 500
   explosionParticle: {fileID: 469185268099506324, guid: ebf558bc749eb2b40b50eb10c70a31d1,
     type: 3}
+  target: {x: 0, y: 0, z: 0}
 --- !u!195 &1757517862236599276
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -796,7 +797,7 @@ NavMeshAgent:
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 0.5
   m_BaseOffset: 0
