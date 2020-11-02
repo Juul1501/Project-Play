@@ -14,6 +14,7 @@ public class AnimalSpawner : MonoBehaviour
     public TextMeshProUGUI text;
     public Mode mode;
     GameObject curChicken;
+    public LevelManager levelManager;
     private void Start()
     {
         text.text = amount.ToString();
@@ -29,7 +30,7 @@ public class AnimalSpawner : MonoBehaviour
                 switch (mode)
                 {
                     case Mode.Spawning:
-                        if (hit.transform != null)
+                        if (hit.transform != null && !levelManager.bound.Contains(hit.point))
                         {
                             if (amount > 0)
                             {

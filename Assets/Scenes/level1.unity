@@ -561,6 +561,11 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 1276333358}
+    - target: {fileID: 1436393600569178554, guid: 92308d7e51b6cb34aa663846670202c8,
+        type: 3}
+      propertyPath: levelManager
+      value: 
+      objectReference: {fileID: 1680732084}
     - target: {fileID: 1436393600569178555, guid: 92308d7e51b6cb34aa663846670202c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -791,6 +796,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: level2
+  bound:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!1 &1685129068
 GameObject:
   m_ObjectHideFlags: 0
