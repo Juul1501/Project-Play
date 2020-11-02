@@ -22,14 +22,11 @@ public class Chicken : MonoBehaviour
     Vector3 destination;
     public GameObject explosionParticle;
 
-    Transform curTarget;
+    public Vector3 target;
 
     void Start()
     {
-        curTarget = GetClosestBuilding(transform.position, 100);
-        destination = curTarget.position;
-        agent.SetDestination(destination);
-        state = State.Walking;
+        state = State.Idle;
     }
 
     void Update()
@@ -38,17 +35,13 @@ public class Chicken : MonoBehaviour
             case State.Idle:
                 break;
             case State.Walking:
-
-                if (Vector3.Distance(transform.position, destination) < destinationOffset) 
+                if(agent.destination == null)
                 {
-                    agent.destination = transform.position;
-                    state = State.Exploding;
+                    state = State.Idle;
                 }
-                if(curTarget == null)
+                if(Vector3.Distance(transform.position,agent.destination) < destinationOffset)
                 {
-                    curTarget = GetClosestBuilding(transform.position, 100);
-                    destination = curTarget.position;
-                    agent.SetDestination(destination);
+                    state = State.Exploding;
                 }
             break;
             case State.Exploding:
@@ -74,24 +67,6 @@ public class Chicken : MonoBehaviour
         }
     }
 
-    Transform GetClosestBuilding(Vector3 center, float radius)
-    {
-        Transform tMin = null;
-        float minDist = Mathf.Infinity;
-        Vector3 currentPos = transform.position;
-        Collider[] hitColliders = Physics.OverlapSphere(center, radius, targetLayer);
-        foreach (var h in hitColliders)
-        {
-            float dist = Vector3.Distance(h.transform.position, currentPos);
-            if (dist < minDist)
-            {
-                tMin = h.transform;
-                minDist = dist;
-            }
-        }
-        return tMin;
-    }
-
     IEnumerator ExplodeChicken()
     {
         yield return new WaitForSeconds(0.5f);
@@ -99,5 +74,20 @@ public class Chicken : MonoBehaviour
         Instantiate(explosionParticle, transform.position, Quaternion.identity);
         exploded = true;
         Destroy(this.gameObject);
+    }
+
+    public void SetDestination (Vector3 target)
+    {
+        agent.destination = target;
+        state = State.Walking;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.layer == targetLayer)
+        {
+            state = State.Exploding;
+            agent.destination = transform.position;
+        }
     }
 }
