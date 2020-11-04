@@ -592,16 +592,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1436393600569178554, guid: 92308d7e51b6cb34aa663846670202c8,
         type: 3}
-      propertyPath: amount
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436393600569178554, guid: 92308d7e51b6cb34aa663846670202c8,
-        type: 3}
-      propertyPath: arrow
-      value: 
-      objectReference: {fileID: 1766734712}
-    - target: {fileID: 1436393600569178554, guid: 92308d7e51b6cb34aa663846670202c8,
-        type: 3}
       propertyPath: text
       value: 
       objectReference: {fileID: 1276333358}
@@ -989,13 +979,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685129068}
-  m_LocalRotation: {x: 0.3088662, y: -0.029437842, z: 0.009564844, w: 0.9506017}
-  m_LocalPosition: {x: 1.72, y: 7.76, z: -21.3}
+  m_LocalRotation: {x: 0.309017, y: 0, z: 0, w: 0.95105654}
+  m_LocalPosition: {x: 1.72, y: 9.35, z: -22.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 36, y: -3.5470002, z: 0}
+  m_LocalEulerAnglesHint: {x: 36, y: 0, z: 0}
 --- !u!1 &1766734712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1209,12 @@ PrefabInstance:
     - target: {fileID: 1585716972083273296, guid: 2e60c387090fed14c850e348e1c4aac1,
         type: 3}
       propertyPath: m_fontSize
-      value: 35.1
+      value: 34.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585716972083273296, guid: 2e60c387090fed14c850e348e1c4aac1,
+        type: 3}
+      propertyPath: m_overflowMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1585716972083273297, guid: 2e60c387090fed14c850e348e1c4aac1,
         type: 3}
@@ -1244,7 +1239,7 @@ PrefabInstance:
     - target: {fileID: 1585716972083273297, guid: 2e60c387090fed14c850e348e1c4aac1,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1585716972083273297, guid: 2e60c387090fed14c850e348e1c4aac1,
         type: 3}
@@ -1276,6 +1271,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2293217858611456993, guid: 057870116bf3b46469604ee892091eb7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5287507605904339748, guid: 057870116bf3b46469604ee892091eb7,
         type: 3}
       propertyPath: m_fontAsset
