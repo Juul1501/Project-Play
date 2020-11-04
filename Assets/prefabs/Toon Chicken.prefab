@@ -46,6 +46,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -776,7 +777,7 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 512
-  explosionRadius: 3
+  explosionRadius: 1.75
   explosionDamage: 500
   explosionParticle: {fileID: 469185268099506324, guid: ebf558bc749eb2b40b50eb10c70a31d1,
     type: 3}
